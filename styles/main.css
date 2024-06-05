@@ -1,98 +1,108 @@
-{
-    color: black 
-
-}
-#about-me {
-    font-size: Larger;
-}
-.silly 
-    .important {
-        color: red;
-    }
-
-h2.important {
-    font-size: 32px;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-let arr = [3, 1, 4, 1, 5];
-
-
-/* Task 1: Hover Highlight Card */
-.hover-highlight-card:hover {
-    padding: 20px;
-    fade in and out: 0.2s;
-    background-color: lightgray;
-    box-shadow: 10px 10px 5px darkgray;
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
-/* Task 2: Animated Navigation Menu */
-.animated-nav-menu ul {
+header nav ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    gap: 10px;
 }
 
-.animated-nav-menu a {
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    border-radius: 10%;
-    padding: 4px;
-    color: purple;
-    background-color: white;
-    transition: 0.5s;
 }
 
-.animated-nav-menu a:hover {
-    color: white;
-    background-color:purple;
+main {
+    padding: 20px;
 }
 
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
+h1, h2, h3 {
+    margin: 10px 0;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-/* Task 3: Button Press Animation */
-.button-press-animation button {
-    padding: 10px 20px;
+form label {
+    display: block;
+    margin: 5px 0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    padding: 10px;
     border: none;
-    background-color: #00aaff;
-    color: white;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.button-press-animation button:active {
-    transform: scale(0.90);
-  }
-
-/* Task 4: Simple Loading Spinner */
-.simple-loading-spinner .spinner {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #3498db;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 2s linear infinite;
+form button:hover {
+    background: #555;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-/* Task 5: Fading Gallery */
-.fading-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#project-list ul {
+    padding: 0;
+    list-style: none;
 }
-.fading-gallery img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+
+#project-list ul li {
+    background: #e2e2e2;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
 }
-.fading-gallery:hover {
-    transform: scale(1.1);
-    transform: translateY(-1rem);
-    opacity:1;
-  }
 
+#project-list ul li:hover {
+    background: #ccc;
+}
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
